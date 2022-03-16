@@ -1,9 +1,3 @@
-// document.getElementById("test-audio").onclick = function() {
-//     document.getElementById("time").innerHTML = "ok";
-//     var audio = new Audio('assets/memes/bruh.mp3');
-//     audio.play();
-// }
-
 var insideLoop = 0;
 
 document.getElementById("jouer").onclick = function () {
@@ -26,7 +20,7 @@ document.getElementById("jouer").onclick = function () {
               insideLoop = 0;
             };
             console.log(data.time, currentTime, ((data.time-currentTime))/1000, data.file)
-          }, 750);
+          }, 1000);
         }
       })
     }, 1000);
